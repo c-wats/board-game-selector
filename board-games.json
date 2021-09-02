@@ -1,0 +1,18 @@
+{
+    "boardGames": [
+        {
+            "id": 1,
+            "name": "Articulate",
+            "minPlayers": "4",
+            "maxPlayers": "10",
+            "tags": ["word"]
+        },
+        {
+            "id": 2,
+            "name": "Avalon",
+            "minPlayers": "4",
+            "maxPlayers": "12",
+            "tags": ["deception"]
+        }
+    ]
+}
