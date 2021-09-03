@@ -2,9 +2,8 @@
 
 import json
 
-f = open('board-games.json',)
-boardGames = json.load(f)
-f.close()
+with open('board-games.json') as file:
+    boardGames = json.load(file)
 
 def listBoardGames(boardGames):
     print("All games: ")
