@@ -11,7 +11,16 @@ def listBoardGames(boardGames):
         identifier, name, minPlayers, maxPlayers, tags = game['id'], game['name'], game['minPlayers'], game['maxPlayers'], [tag for tag in game['tags']]
         print(f'{identifier}. {name}. {minPlayers}-{maxPlayers} players. Genre: {tags}')
 
+
+def returnPlayableGames(numberOfPlayers):
+    print(f"Games for {numberOfPlayers}: ")
+    for game in boardGames['boardGames']:
+        if numberOfPlayers >= int(game['minPlayers']) and numberOfPlayers <= int(game['maxPlayers']):
+            print(game['name'])
+
 def main():
     listBoardGames(boardGames)
+    numberOfPlayers = int(input ("\nNumber of players: "))
+    returnPlayableGames(numberOfPlayers)
 
 main()
